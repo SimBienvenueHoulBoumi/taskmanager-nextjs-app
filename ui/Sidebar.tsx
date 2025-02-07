@@ -68,7 +68,7 @@ export default function Sidebar(): JSX.Element {
   return (
     <div
       ref={sidebarRef} // Attache la référence à la sidebar pour la gestion des clics en dehors
-      className={`absolute top-0 left-0 h-full bg-blue-200 transition-all duration-200 ease-in-out shadow-lg flex flex-col justify-between z-50 ${
+      className={`h-full bg-blue-200 transition-all duration-200 ease-in-out shadow-lg flex flex-col justify-between z-50 ${
         menuOpen ? "w-64 bg-opacity-100" : "w-16 bg-opacity-75"
       }`}
     >
@@ -104,7 +104,7 @@ export default function Sidebar(): JSX.Element {
               <Link
                 key={index}
                 href={link.href}
-                className={`relative flex items-center ${
+                className={`flex items-center ${
                   menuOpen
                     ? "justify-start px-1 py-1 rounded-md"
                     : "justify-center p-2 rounded-full"
