@@ -71,21 +71,15 @@ export default function Home() {
       <div className="flex flex-col space-y-6 lg:flex-row lg:space-x-6 lg:space-y-0">
         {/* Graph Section */}
         <div className="flex-1">
-          <h2 className="text-lg font-semibold mb-4 text-center lg:text-left">
-            Viewing Progress
-          </h2>
           <ProgressGraph data={fakeGraphData} />
         </div>
 
         {/* Recent Activity Section */}
         <div className="flex-1">
-          <h2 className="text-lg font-semibold mb-4 text-center lg:text-left">
-            Recent Activity
-          </h2>
           <RecentActivity activities={fakeActivity} />
         </div>
       </div>
-      
+
       {/* Anime Table Section */}
       <AnimeTable />
     </div>
