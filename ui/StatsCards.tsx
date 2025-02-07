@@ -18,7 +18,7 @@ const StatCard: React.FC<StatCardProps> = ({
   up,
   icon,
 }) => (
-  <Card className="shadow-md hover:shadow-lg transition-all duration-300">
+  <Card className="shadow-md hover:shadow-lg transition-all duration-300 rounded-lg">
     <CardHeader>
       <CardTitle>{title}</CardTitle>
     </CardHeader>

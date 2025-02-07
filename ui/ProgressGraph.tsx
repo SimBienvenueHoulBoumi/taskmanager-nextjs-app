@@ -5,7 +5,7 @@ interface ProgressGraphProps {
 }
 
 const ProgressGraph: React.FC<ProgressGraphProps> = ({ data }) => (
-  <div className="bg-white p-6 text-sm">
+  <div className="bg-white p-6 text-sm rounded-lg shadow-md">
     <h2 className="text-lg font-semibold mb-4">Viewing Progress</h2>
     <ResponsiveContainer width="100%" height={300}>
       <LineChart data={data}>

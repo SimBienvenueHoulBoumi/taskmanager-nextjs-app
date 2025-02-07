@@ -1,4 +1,5 @@
 // pages/Home.tsx
+
 "use client";
 
 import StatCard from "@/ui/StatsCards";
@@ -6,6 +7,7 @@ import ProgressGraph from "@/ui/ProgressGraph";
 import RecentActivity from "@/ui/RecentActivity";
 import AnimeTable from "@/ui/CustomTable";
 import { FaRegPlayCircle, FaCheckCircle, FaPlus, FaEye } from "react-icons/fa";
+import HeroSection from "@/ui/HeroSession";
 
 const fakeStats = [
   {
@@ -54,12 +56,19 @@ const fakeActivity = [
   { action: "Added", name: "Jujutsu Kaisen", date: "3 days ago" },
 ];
 
+
+
 export default function Home() {
   return (
     <div className="space-y-6">
-      <h1 className="text-2xl font-bold">
-        Hello Sim, welcome to your Dashboard! 👋
-      </h1>
+      {/* Hero Section */}
+      <HeroSection />
+
+      <div className="flex justify-between items-center">
+        <h1 className="text-2xl font-bold">
+          Hello Sim, welcome to your Dashboard! 👋
+        </h1>
+      </div>
 
       {/* Stats Section */}
       <div className="bg-white pl-4 rounded-md grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-sm">
